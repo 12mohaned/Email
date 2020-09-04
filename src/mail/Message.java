@@ -1,16 +1,16 @@
 package mail;
 
 public class Message {
-String subject;
-String content;
+private String subject;
+private String content;
 public Message(String subject, String content) {
 	this.subject = subject;
 	this.content = content;
 }
 
 public String toString() {
-	return "Message Subject: " +subject  +"\n" +
-			"Message Content: "  + content;
+return "Message Subject: " +subject  +"\n" +
+	"Message Content: "  + content;
 }
 public String getSubject() {
 	return subject;
