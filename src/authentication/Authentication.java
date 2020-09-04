@@ -19,10 +19,10 @@ public Email login(String email, String password) {
 	if (validator.validate_email(email) && validator.validate_password(password)) {
 	return this.email;
 	}
-	return null;
+return null;
 }
 
 public Email getEmail() {
-	return this.email;
+return this.email;
 }
 }
