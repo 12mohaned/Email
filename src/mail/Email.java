@@ -54,30 +54,27 @@ public boolean editDraft(int index, String Subject, String Content) {
 }
 
 public boolean deleteDraft(int index) {
-	if(index-1 >= 0 && index-1 <= Draft.size()-1) {
-	Draft.remove(index-1);
-	return true;
-}else {
-	return false;
+if(index-1 >= 0 && index-1 <= Draft.size()-1) {
+Draft.remove(index-1);
+return true;
 }
+return false;
 }
 
 public boolean deleteInbox(int index) {
-	if( index-1 >= 0 &&  index-1 <= Inbox.size()-1) {
-		Inbox.remove(index-1);
+if( index-1 >= 0 &&  index-1 <= Inbox.size()-1) {
+	Inbox.remove(index-1);
 	return true;
-}else {
-	return false;
 }
+return false;
 }
 
 public boolean deleteSentBox(int index) {
-	if( index-1 >= 0 &&  index-1 <= Sentbox.size()-1) {
-		Sentbox.remove(index-1);
+if( index-1 >= 0 &&  index-1 <= Sentbox.size()-1) {
+	Sentbox.remove(index-1);
 	return true;
-}else {
-	return false;
 }
+return false;
 }
 public String getEmail() {
 	return Email;
