@@ -1,6 +1,5 @@
 package mail;
 import java.util.ArrayList;
-import java.util.Stack;
 public class Email {
 private ArrayList<Message>Inbox;
 private ArrayList<Message>Draft;
