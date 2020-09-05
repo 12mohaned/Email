@@ -5,6 +5,6 @@ import app.Application;
 
 public class Client {
 public static void main(String[]args) throws NumberFormatException, IOException {
-	Application App = new Application();
+	Application application = Application.getInstance();
 }
 }
