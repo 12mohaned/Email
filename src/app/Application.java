@@ -7,6 +7,15 @@ import java.util.ArrayList;
 import authentication.Authentication;
 import mail.Message;
 public class Application {
+private static Application application; 
+static {
+try {
+	application = new Application();
+} 
+catch (Exception e) {
+	throw new ExceptionInInitializerError(e);
+		    }
+       }
 BufferedReader br;
 Authentication authentication;
 String email;
@@ -206,5 +215,8 @@ public boolean checkAuthentication(Authentication authentication, String email, 
 
 	}
 return is_authenticated;
+}
+public static Application getInstance() {
+return application;
 }
 }
